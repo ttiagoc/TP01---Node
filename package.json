@@ -5,6 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "ej5":"node ej5.js",
+    "ej4":"node ej4.js",
+    "ej3":"node ej3.js",
+    "ej2":"node ej2.js",
     "ej1": "node ej1.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

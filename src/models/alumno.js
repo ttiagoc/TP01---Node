@@ -1,6 +1,6 @@
 
 
-export class Alumno {
+export default class Alumno {
     constructor(nombre, dni) {
       this.nombre = nombre;
       this.dni = dni;
@@ -14,5 +14,11 @@ export class Alumno {
         this.dni = dni
     }
 
+     Mostrar(){
+      
+      let texto = "Nombre del alumno: " + this.nombre + ", DNI: " + this.dni;
+      return texto
+    
+    }
 
   }
