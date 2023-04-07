@@ -11,21 +11,21 @@
 
 import url from 'node:url';
 
-console.log(ParsearUrl("https://www.google.com/search?q=marranas&&safe=active&ssui=on"))
+console.log(ParsearUrl("http://www.ort.edu.ar:8080/alumnos/index.htm?curso=2022&mes=mayo"))
 
 
-export default function ParsearUrl(link){
+function ParsearUrl(link) {
 
-var q = url.parse(link, true);
+    var q = url.parse(link,true);
 
 
-let obj = {
-    host:q.protocol + "//" + q.host,
-    pathname:q.pathname,
-    parametros: q.query
-}
+    let obj = {
+        host: q.protocol + "//" + q.host,
+        pathname: q.pathname,
+        parametros: q.query
+    }
 
-return obj
+    return obj
 
 
 }
