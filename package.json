@@ -5,6 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "ej7":"node ej7.js",
+    "ej6":"node ej6.js",
     "ej5":"node ej5.js",
     "ej4":"node ej4.js",
     "ej3":"node ej3.js",

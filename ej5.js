@@ -16,16 +16,19 @@ console.log(ParsearUrl("http://www.ort.edu.ar:8080/alumnos/index.htm?curso=2022&
 
 function ParsearUrl(link) {
 
-    var q = url.parse(link,true);
+   
+        var q = url.parse(link,true);
 
-
-    let obj = {
-        host: q.protocol + "//" + q.host,
-        pathname: q.pathname,
-        parametros: q.query
-    }
-
-    return obj
+    
+        let obj = {
+            host: q.protocol + "//" + q.host,
+            pathname: q.pathname,
+            parametros: JSON.parse(JSON.stringify(q.query))
+        }
+    
+        return obj
+        
+  
 
 
 }
