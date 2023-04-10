@@ -7,4 +7,4 @@ let textoEntrada02 = "polo";
 
 
 console.log(ConcatenarStrings(textoEntrada01,textoEntrada02))
-console.log(InvertirString("polo y tiago"))
+console.log(InvertirString(textoEntrada01, textoEntrada02))

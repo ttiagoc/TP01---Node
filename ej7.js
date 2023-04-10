@@ -7,18 +7,10 @@ let monedaPais = ObtenerMoneda(codigoPais);
 console.log(`El prefijo del país ${codigoPais} es: ${monedaPais}`);
 
 
+function ObtenerMoneda(nombre) {
 
-function ObtenerMoneda(nombre){
+  let posicionPais;
 
-    let posicionPais;
-   
-   return  CountryToCurrency[nombre]
-
-     let NombrePais = countriesData[posicionPais].countryCallingCode
-    // return NombrePais
-
-
-
-
+  return CountryToCurrency[nombre]
 }
 
