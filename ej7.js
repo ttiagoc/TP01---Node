@@ -1,11 +1,24 @@
+import CountryToCurrency from "country-to-currency"
 
 
-var countryCodes = require('countryCodes')
-console.log(countryCodes)
+let codigoPais;
+codigoPais = 'US';
+let monedaPais = ObtenerMoneda(codigoPais);
+console.log(`El prefijo del país ${codigoPais} es: ${monedaPais}`);
 
 
-// let monedaDelPais, codigoPais; codigoPais = 'AR';
-// monedaDelPais = obtenerMoneda(codigoPais);
-// console.log(`La moneda del país ${codigoPais} es: ${monedaDelPais}`);
-// codigoPais = 'UZA'; monedaDelPais = obtenerMoneda(codigoPais);
-// console.log(`La moneda del país ${codigoPais} es: ${monedaDelPais}`);
+
+function ObtenerMoneda(nombre){
+
+    let posicionPais;
+   
+   return  CountryToCurrency[nombre]
+
+     let NombrePais = countriesData[posicionPais].countryCallingCode
+    // return NombrePais
+
+
+
+
+}
+
